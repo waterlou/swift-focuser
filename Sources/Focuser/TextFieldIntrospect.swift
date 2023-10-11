@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Introspect
+import SwiftUIIntrospect
 
 class TextFieldObserver: NSObject, UITextFieldDelegate {
     var onReturnTap: () -> () = {}
