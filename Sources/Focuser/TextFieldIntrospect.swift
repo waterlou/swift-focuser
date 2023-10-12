@@ -66,7 +66,7 @@ public struct FocusModifier<Value: FocusStateCompliant & Hashable>: ViewModifier
     
     public func body(content: Content) -> some View {
         content
-            .introspectTextField { tf in
+            .introspect(.textField, on: .iOS(.v13, .v14, .v15, .v16, .v17)) { tf in
                 if !(tf.delegate is TextFieldObserver) {
                     observer.forwardToDelegate = tf.delegate
                     tf.delegate = observer
