@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49FD9F112AD7C93500379777 /* Focuser in Frameworks */ = {isa = PBXBuildFile; productRef = 49FD9F102AD7C93500379777 /* Focuser */; };
 		FFDC73A326DF94DC00C1F0D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC73A226DF94DC00C1F0D0 /* AppDelegate.swift */; };
 		FFDC73A526DF94DC00C1F0D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC73A426DF94DC00C1F0D0 /* SceneDelegate.swift */; };
 		FFDC73A726DF94DC00C1F0D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC73A626DF94DC00C1F0D0 /* ContentView.swift */; };
@@ -32,18 +33,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FD9F112AD7C93500379777 /* Focuser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49FD9F0F2AD7C93500379777 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FFDC739626DF94DC00C1F0D0 = {
 			isa = PBXGroup;
 			children = (
 				FF8D789526E1FC33006287E9 /* swift-focuser */,
 				FFDC73A126DF94DC00C1F0D0 /* focusstate */,
 				FFDC73A026DF94DC00C1F0D0 /* Products */,
+				49FD9F0F2AD7C93500379777 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +104,7 @@
 			);
 			name = focusstate;
 			packageProductDependencies = (
+				49FD9F102AD7C93500379777 /* Focuser */,
 			);
 			productName = focusstate;
 			productReference = FFDC739F26DF94DC00C1F0D0 /* focusstate.app */;
@@ -105,8 +116,9 @@
 		FFDC739726DF94DC00C1F0D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					FFDC739E26DF94DC00C1F0D0 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -209,6 +221,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -270,6 +283,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -363,6 +377,13 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49FD9F102AD7C93500379777 /* Focuser */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Focuser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFDC739726DF94DC00C1F0D0 /* Project object */;
 }

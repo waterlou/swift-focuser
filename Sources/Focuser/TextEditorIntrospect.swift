@@ -14,7 +14,7 @@ public struct FocusModifierTextEditor<Value: FocusStateCompliant & Hashable>: Vi
     
     public func body(content: Content) -> some View {
         content
-            .introspectTextView { tv in
+            .introspect(.textEditor, on: .iOS(.v14, .v15, .v16, .v17)) { tv in
                 if focusedField == equals {
                     tv.becomeFirstResponder()
                 }
