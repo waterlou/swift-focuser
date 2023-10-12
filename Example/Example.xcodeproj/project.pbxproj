@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		FFDC73A926DF94DE00C1F0D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDC73A826DF94DE00C1F0D0 /* Assets.xcassets */; };
 		FFDC73AC26DF94DE00C1F0D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDC73AB26DF94DE00C1F0D0 /* Preview Assets.xcassets */; };
 		FFDC73AF26DF94DE00C1F0D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDC73AD26DF94DE00C1F0D0 /* LaunchScreen.storyboard */; };
-		FFDC73C626DFE61F00C1F0D0 /* Focuser in Frameworks */ = {isa = PBXBuildFile; productRef = FFDC73C526DFE61F00C1F0D0 /* Focuser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFDC73C626DFE61F00C1F0D0 /* Focuser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +94,6 @@
 			);
 			name = focusstate;
 			packageProductDependencies = (
-				FFDC73C526DFE61F00C1F0D0 /* Focuser */,
 			);
 			productName = focusstate;
 			productReference = FFDC739F26DF94DC00C1F0D0 /* focusstate.app */;
@@ -298,6 +295,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"focusstate/Preview Content\"";
+				DEVELOPMENT_TEAM = 2RTG95T48T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = focusstate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,6 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"focusstate/Preview Content\"";
+				DEVELOPMENT_TEAM = 2RTG95T48T;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = focusstate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -364,14 +363,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FFDC73C526DFE61F00C1F0D0 /* Focuser */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FFDC73C426DFE61F00C1F0D0 /* XCRemoteSwiftPackageReference "swift-focuser" */;
-			productName = Focuser;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFDC739726DF94DC00C1F0D0 /* Project object */;
 }
